@@ -1,0 +1,17 @@
+Inicio
+  Mostrar lista de libros disponibles
+  Solicitar al usuario que ingrese el ID o nombre del libro a reservar
+  Leer libro_seleccionado
+
+  Si libro_seleccionado está disponible Entonces
+    Solicitar al usuario que ingrese sus datos (nombre, ID usuario, etc.)
+    Leer datos_usuario
+
+    Crear reserva con libro_seleccionado y datos_usuario
+    Marcar libro_seleccionado como reservado
+
+    Mostrar mensaje "Reserva realizada con éxito"
+  Sino
+    Mostrar mensaje "El libro no está disponible para reserva"
+  FinSi
+Fin
