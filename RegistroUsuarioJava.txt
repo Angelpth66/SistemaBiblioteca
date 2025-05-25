@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class RegistroUsuario {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Registro de Usuario");
+
+        // Captura de datos
+        System.out.print("Ingrese nombre de usuario: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Ingrese correo electrónico: ");
+        String email = scanner.nextLine();
+
+        System.out.print("Ingrese contraseña: ");
+        String password = scanner.nextLine();
+
+        // Validación simple
+        if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            System.out.println("Error: Todos los campos son obligatorios.");
+        } else if (!email.contains("@")) {
+            System.out.println("Error: El correo electrónico no es válido.");
+        } else {
+            // Simulación de registro exitoso
+            System.out.println("Usuario registrado exitosamente.");
+            System.out.println("Nombre de usuario: " + username);
+            System.out.println("Correo electrónico: " + email);
+        }
+
+        scanner.close();
+    }
+}
